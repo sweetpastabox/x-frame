@@ -1,0 +1,40 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+
+  "version": "0.1.0",
+  "manifest_version": 3,
+  "offline_enabled": true,
+  "name": "Allow X-Frame-Options",
+  "host_permissions": ["<all_urls>"],
+  "short_name": "allow-x-frame-options",
+  "permissions": ["storage", "declarativeNetRequest"],
+  "homepage_url": "https://mybrowseraddon.com/allow-x-frame-options.html",
+  "description": "Easily remove X-Frame-Options from the response header.",
+  "commands": {
+    "_execute_action": {}
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "options_ui": {
+    "open_in_tab": true,
+    "page": "data/options/options.html"
+  },
+  "action": {
+    "default_title": "Allow X-Frame-Options",
+    "default_popup": "data/popup/popup.html",
+    "default_icon": {
+      "16": "data/icons/16.png",
+      "32": "data/icons/32.png",
+      "48": "data/icons/48.png",
+      "64": "data/icons/64.png"
+    }
+  },
+  "icons": {
+    "16": "data/icons/16.png",
+    "32": "data/icons/32.png",
+    "48": "data/icons/48.png",
+    "64": "data/icons/64.png",
+    "128": "data/icons/128.png"
+  }
+}

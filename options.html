@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Options</title>
+    <meta charset="utf-8">
+    <link type="text/css" rel="stylesheet" href="options.css">
+  </head>
+  <body>
+    <div class="logo"></div>
+    <div class="container">
+      <div class="item column">
+        <div class="info">
+          <p>Allow X-Frame-Options for individual tabs only (per-tab mode)</p>
+        </div>
+        <div class="content">
+          <input type="checkbox" id="session">
+        </div>
+      </div>
+      <div class="item row line">
+        <p class="note">When this option is active, you need to enable the extension for each tab separately.</p>
+        <p class="note">Moreover, reloading the tab will turn off the extension for the current tab.</p>
+      </div>
+      <!-- -->
+      <div class="item row">
+        <div class="info">
+          <p>Whitelisted domain(s) for Allow X-Frame-Options</p>
+          <p class="note">When X-Frame-Options is allowed in your browser, for the following domains, the addon is not active.</p>
+          <p class="note">Note 1: add or remove domains comma separated. All changes are auto-saved to the memory.</p>
+          <p class="note">Note 2: the whitelist table is only working when the above option is not active.</p>
+        </div>
+        <div class="content">
+          <textarea id="whitelist"></textarea>
+        </div>
+      </div>
+    </div>
+    <!-- -->
+    <script type="text/javascript" src="options.js"></script>
+  </body>
+</html>
